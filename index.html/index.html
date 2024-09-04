@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top up game</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <!--header-->
+<header>
+    <h1>Top Up Game Online</h1>
+</header>
+<!--selesai-->
+
+<!--konten utama-->
+<main>
+    <section class="topup-section">
+<!--gallery-->
+
+<div class="game-images">
+    <a href="topup_ml.html">
+<img src="https://tse4.mm.bing.net/th?id=OIP.Oy2BJrtVM9436VNSQyMCKAHaEK&pid=Api&P=0&h=220" alt="mobile legends" class="game-img">
+</a>
+<a href="topup pubg.html">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.UAkzJulkbWCyXnAixCnKJAHaEK&pid=Api&P=0&h=220" alt="pubg mobile" class="game-img">
+</a>
+<a href="topup ff.html">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.KsrDhFzyJJctNJlPsC-n0QHaE8&pid=Api&P=0&h=220" alt="free fire" class="game-img">
+</a>
+<a href="topup call of duty.html">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.RZB2We_NphXSYxRJOv-FwgHaHa&pid=Api&P=0&h=220" alt="call of duty"
+    class="game-img">
+</a>
+</div>
+
+        <!--form topup game-->
+
+
+        <form id="topupform" action="process-topup.php" method="post" onsubmit="return validateform()">
+
+
+            <div class="form group"><label for="game-select">pilih game</label>
+ <select name="game-select" name="game" class="form-control">
+
+
+    <option value="Mobile Legends">MOBILE LEGENDS</option>
+    <option value="pubg mobile">PUBG MOBILE</option>
+    <option value="free fire">FREE FIRE</option>
+    <option value="CALL OF DUTY">CALL OF  DUTY</option>
+           </select>
+            </div>
+
+<!--OPTION TAMBAHAN NANTI-->
+
+
+<!--PEMBUATAN LABEL-->
+<div class="form-group">
+    <label for="user-id">Masukan ID Game</label>
+    <input type="text" id="user-id" name="user_id" class="form-control" placeholder="Masukan ID Game Anda" required>
+</div>
+
+<div class="form-group">
+    <label for="topup-amount">jumlah Top Up</label>
+    <input type="number" id="topup-amount" name="amount" class="form-control" placeholder="masukan jumlah top up" required>
+</div>
+
+<!--button-->
+<button type="submit" class="btn">Top Up Sekarang</button>
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
